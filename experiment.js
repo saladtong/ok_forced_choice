@@ -72,78 +72,6 @@ const post_survey = {
     pages: [
       {
         name: "page_1",
-        title: "Demographic Information",
-        showQuestionNumbers: false,
-        elements: [
-          {
-            type: "radiogroup",
-            title:
-              "Did you read the instructions and do you think you did the task correctly?",
-            name: "instructions",
-            choices: ["Yes", "No", "I was confused"],
-            required: true,
-          },
-          {
-            type: "dropdown",
-            title: "Gender:",
-            name: "Gender",
-            choices: ["Female", "Male", "Non-binary/Non-conforming", "Other"],
-            required: true,
-          },
-
-          {
-            type: "text",
-            title: "Age:",
-            name: "age",
-            textbox_columns: 10,
-            required: true,
-          },
-          {
-            type: "dropdown",
-            title: "Level of education:",
-            name: "education",
-            choices: [
-              "Some high school",
-              "Graduated high school",
-              "Some college",
-              "Graduated college",
-              "Hold a higher degree",
-            ],
-            showOtherItem: true,
-            required: true,
-          },
-          {
-            type: "text",
-            title:
-              "Native language? (What was the language spoken at home when you were growing up?)",
-            name: "language",
-            textbox_columns: 20,
-            required: true,
-          },
-          {
-            type: "drop-down",
-            title: "Did you enjoy the experiment?",
-            name: "enjoy",
-            options: [
-              "Worse than the average experiment",
-              "An average experiment",
-              "Better than the average experiment",
-            ],
-            showOtherItem: true,
-            required: true,
-          },
-          {
-            type: "text",
-            title: "Do you have any other comments about this experiment?",
-            name: "comments",
-            textbox_columns: 30,
-            textbox_rows: 4,
-            required: true,
-          },
-        ],
-      },
-      {
-        name: "page_2",
         title: "Habits",
         elements: [
           {
@@ -276,6 +204,85 @@ const post_survey = {
             ],
             alternateRows: true,
             eachRowRequired: true,
+          },
+        ],
+      },
+      {
+        name: "page_2",
+        title: "Demographic Information",
+        showQuestionNumbers: false,
+        elements: [
+          {
+            type: "radiogroup",
+            title:
+              "Did you read the instructions and do you think you did the task correctly?",
+            name: "instructions",
+            choices: ["Yes", "No", "I was confused"],
+            required: true,
+          },
+          {
+            type: "dropdown",
+            title: "Gender:",
+            name: "Gender",
+            choices: ["Female", "Male", "Non-binary/Non-conforming", "Other"],
+            required: true,
+          },
+
+          {
+            type: "text",
+            title: "Age:",
+            name: "age",
+            textbox_columns: 10,
+            required: true,
+          },
+          {
+            type: "dropdown",
+            title: "Level of education:",
+            name: "education",
+            choices: [
+              "Some high school",
+              "Graduated high school",
+              "Some college",
+              "Graduated college",
+              "Hold a higher degree",
+            ],
+            showOtherItem: true,
+            required: true,
+          },
+          {
+            type: "text",
+            title:
+              "What was the language you spoke at home when you were growing up?",
+            name: "home language",
+            textbox_columns: 20,
+            required: true,
+          },
+          {
+            type: "text",
+            title: "What language do you speak the majority of the day?",
+            name: "language",
+            textbox_columns: 20,
+            required: true,
+          },
+          {
+            type: "drop-down",
+            title: "Did you enjoy the experiment?",
+            name: "enjoy",
+            options: [
+              "Worse than the average experiment",
+              "An average experiment",
+              "Better than the average experiment",
+            ],
+            showOtherItem: true,
+            required: true,
+          },
+          {
+            type: "text",
+            title: "Do you have any other comments about this experiment?",
+            name: "comments",
+            textbox_columns: 30,
+            textbox_rows: 4,
+            required: true,
           },
         ],
       },
